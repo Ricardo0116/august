@@ -13,6 +13,7 @@ use App\Http\Controllers\UserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::redirect('/', 'users');
 
 Route::get('users', [UserController::class, 'index'])->name('users.index');
 
